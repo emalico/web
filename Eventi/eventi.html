@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <title style="color: #ff0000;">Restorant</title>
+  
+</head>
+<body>
+  <style>
+
+.c1 {
+    position: absolute; /* Pozicion absolut për të dalë mbi të tjerat */
+    top: 210%;
+    left: 20%;
+    transform: translate(-50%, -50%); /* Qendron kartën në mes të ekranit */
+    
+}
+.c2 {
+    position: absolute; /* Pozicion absolut për të dalë mbi të tjerat */
+    top: 210%;
+    left: 40%;
+    transform: translate(-50%, -50%); /* Qendron kartën në mes të ekranit */
+    
+}
+.c3 {
+    position: absolute; /* Pozicion absolut për të dalë mbi të tjerat */
+    top: 210%;
+    left: 60%;
+    transform: translate(-50%, -50%); /* Qendron kartën në mes të ekranit */
+    
+}
+.c4 {
+    position: absolute; /* Pozicion absolut për të dalë mbi të tjerat */
+    top: 210%;
+    left: 80%;
+    transform: translate(-50%, -50%); /* Qendron kartën në mes të ekranit */
+    
+}
+
+.cdd1 {
+    position: absolute; /* Pozicion absolut për të dalë mbi të tjerat */
+    top: 270%;
+    left: 20%;
+    transform: translate(-50%, -50%); /* Qendron kartën në mes të ekranit */
+    
+}
+.cdd2 {
+    position: absolute; /* Pozicion absolut për të dalë mbi të tjerat */
+    top: 270%;
+    left: 40%;
+    transform: translate(-50%, -50%); /* Qendron kartën në mes të ekranit */
+    
+}
+.cdd3 {
+    position: absolute; /* Pozicion absolut për të dalë mbi të tjerat */
+    top: 270%;
+    left: 60%;
+    transform: translate(-50%, -50%); /* Qendron kartën në mes të ekranit */
+    
+}
+.cdd4 {
+    position: absolute; /* Pozicion absolut për të dalë mbi të tjerat */
+    top: 270%;
+    left: 80%;
+    transform: translate(-50%, -50%); /* Qendron kartën në mes të ekranit */
+    
+}
+
+.cvd1 {
+    position: absolute; /* Pozicion absolut për të dalë mbi të tjerat */
+    top: 350%;
+    left: 60%;
+    transform: translate(-50%, -50%); /* Qendron kartën në mes të ekranit */
+    
+}
+.cvd2 {
+    position: absolute; /* Pozicion absolut për të dalë mbi të tjerat */
+    top: 350%;
+    left: 20%;
+    transform: translate(-50%, -50%); /* Qendron kartën në mes të ekranit */
+    
+}
+.cvd3 {
+    position: absolute; /* Pozicion absolut për të dalë mbi të tjerat */
+    top: 350%;
+    left: 40%;
+    transform: translate(-50%, -50%); /* Qendron kartën në mes të ekranit */
+    
+}
+.cvd4 {
+    position: absolute; /* Pozicion absolut për të dalë mbi të tjerat */
+    top: 350%;
+    left: 80%;
+    transform: translate(-50%, -50%); /* Qendron kartën në mes të ekranit */
+    
+
+}
+.a1 {
+    position: absolute; /* Pozicion absolut për të dalë mbi të tjerat */
+    top: 430%;
+    left: 20%;
+    transform: translate(-50%, -50%); /* Qendron kartën në mes të ekranit */
+    
+}
+.a2 {
+    position: absolute; /* Pozicion absolut për të dalë mbi të tjerat */
+    top: 430%;
+    left: 40%;
+    transform: translate(-50%, -50%); /* Qendron kartën në mes të ekranit */
+    
+}
+.a3 {
+    position: absolute; /* Pozicion absolut për të dalë mbi të tjerat */
+    top: 430%;
+    left: 60%;
+    transform: translate(-50%, -50%); /* Qendron kartën në mes të ekranit */
+    
+}
+.a4 {
+    position: absolute; /* Pozicion absolut për të dalë mbi të tjerat */
+    top: 430%;
+    left: 80%;
+    transform: translate(-50%, -50%); /* Qendron kartën në mes të ekranit */
+    
+}
+
+.e1 {
+    position: absolute; /* Pozicion absolut për të dalë mbi të tjerat */
+    top: 500%;
+    left: 60%;
+    transform: translate(-50%, -50%); /* Qendron kartën në mes të ekranit */
+    
+}
+.e2 {
+    position: absolute; /* Pozicion absolut për të dalë mbi të tjerat */
+    top: 500%;
+    left: 20%;
+    transform: translate(-50%, -50%); /* Qendron kartën në mes të ekranit */
+    
+}
+.e3 {
+    position: absolute; /* Pozicion absolut për të dalë mbi të tjerat */
+    top: 500%;
+    left: 40%;
+    transform: translate(-50%, -50%); /* Qendron kartën në mes të ekranit */
+    
+}
+.e4 {
+    position: absolute; /* Pozicion absolut për të dalë mbi të tjerat */
+    top: 500%;
+    left: 80%;
+    transform: translate(-50%, -50%); /* Qendron kartën në mes të ekranit */
+    
+}
+.tr1 {
+    position: absolute; /* Pozicion absolut për të dalë mbi të tjerat */
+    top: 570%;
+    left: 25%;
+    transform: translate(-50%, -50%); /* Qendron kartën në mes të ekranit */
+    
+}
+.tr2 {
+    position: absolute; /* Pozicion absolut për të dalë mbi të tjerat */
+    top: 570%;
+    left: 45%;
+    transform: translate(-50%, -50%); /* Qendron kartën në mes të ekranit */
+    
+}
+.tr3 {
+    position: absolute; /* Pozicion absolut për të dalë mbi të tjerat */
+    top: 570%;
+    left: 65%;
+    transform: translate(-50%, -50%); /* Qendron kartën në mes të ekranit */
+    
+}
+.Titulli1 {
+    position: absolute; /* Pozicion absolut për të dalë mbi të tjerat */
+    top: 180%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Qendron kartën në mes të ekranit */
+    
+}
+.Titulli2 {
+    position: absolute; /* Pozicion absolut për të dalë mbi të tjerat */
+    top: 240%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Qendron kartën në mes të ekranit */
+    
+}
+.Tutilli3 {
+    position: absolute; /* Pozicion absolut për të dalë mbi të tjerat */
+    top: 320%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Qendron kartën në mes të ekranit */
+    
+}
+.Titulli4 {
+    position: absolute; /* Pozicion absolut për të dalë mbi të tjerat */
+    top: 390%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Qendron kartën në mes të ekranit */
+    
+}
+.Titulli5 {
+    position: absolute; /* Pozicion absolut për të dalë mbi të tjerat */
+    top: 470%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Qendron kartën në mes të ekranit */
+    
+}
+.Titulli6 {
+    position: absolute; /* Pozicion absolut për të dalë mbi të tjerat */
+    top: 540%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Qendron kartën në mes të ekranit */
+    
+}
+.section{
+  align-items: center;
+
+}
+
+.reservation-form{
+  position: absolute; /* Pozicion absolut për të dalë mbi të tjerat */
+    top: 620%;
+    left: 35%;
+    transform: translate(-50%, -50%); /* Qendron kartën në mes të ekranit */
+   
+}
+
+
+/* Stili për footer-in */
+footer {
+    background-color: #ff8400; /* Ngjyra e sfondit të footer-it */
+    color: white; /* Ngjyra e tekstit */
+    text-align: center;
+    padding: 20px 10px;
+}
+
+footer ul {
+    list-style: none; /* Hiq numrat ose pikat nga lista */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Qendron lidhjet horizontalisht */
+    gap: 20px; /* Hapësirë ndërmjet lidhjeve */
+}
+
+footer li {
+    display: inline;
+}
+
+footer a {
+    color: #000000; /* Ngjyra e linkut */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline; /* Nënvizo linkun kur kalohet mbi të */
+    color: #ff8400;
+}
+
+    body { 
+  background-color: rgb(0, 0, 0);
+}
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffd000;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #ff0000;
+  }
+  </style>
+  
+	<header>
+	  <nav>
+        <nav class="navbar bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="file:///C:/Users/emali/OneDrive/Desktop/Eventi/1.jpg" alt="Logo" width="60" height="64" class="d-inline-block align-text-top">
+      Fork and Flame
+    </a>
+  </div>
+</nav>
+		<ul>
+		  <li><a href="#home">Home</a></li>
+		  <li><a href="#about">About</a></li>
+		  <li><a href="#menu">Menu</a></li>
+      <li><a href="#reservation">Reservation</a></li>
+
+		</ul>
+	  </nav>
+	</header>
+<section class="hero" id="home">
+  <div class="hero-content">
+    <h1 style="color: rgb(0, 0, 0);" >Welcome to Fork and Flame
+    <p>Përjetoni shijen e përsosmërisë</p>
+    <a href="#menu" class="btn"><h2 style="color: rgb(255, 230, 0);" >Eksploroni Menunë Tonë</h2></a>
+  </div>
+</section>
+<section class="about dark-theme" id="about">
+  <div class="about-content">
+    <h2 style="color: rgb(255, 111, 0);" >About Fork and Flame</h2>
+    <p><h4  style="color: rgb(255, 0, 0);">and Flame është një restorant i krijuar për të sjellë shije të paharrueshme dhe një eksperiencë unike për çdo klient. Ne ofrojmë një menu të pasur me ushqime të freskëta dhe cilësore, të përgatitura me kujdes nga kuzhinierët tanë të talentuar. Nga recetat tradicionale tek ato moderne, qëllimi ynë është të kënaqim çdo shije dhe të krijojmë momente të veçanta për ju dhe të dashurit tuaj.</p>
+    <p>Me një atmosferë të ngrohtë dhe mikpritëse, Fork and Flame është vendi perfekt për një darkë romantike, një festë me miqtë ose një drekë të qetë familjare. Përkushtimi ynë për shërbimin cilësor dhe detajet na dallon, duke bërë çdo vizitë të jetë një përvojë që do të dëshironi ta përsërisni. Mirë se vini te Fork and Flame – aty ku shija takon pasionin!</p></h4>
+    </h4>
+
+    
+  <div class="container">
+        
+    <div class="col">
+      <div class="card text-bg-warning mb-3" style="max-width: 18rem;">
+            <img src="file:///C:/Users/emali/OneDrive/Desktop/Eventi/1.jpg" class="card-img-top" alt="foto">
+            <h5 class="card-title"> Fork and Flame</h5>
+                      <p class="card-text">Mirë se vini në "Fork and Flame"</p>
+            <div class="card-body">
+              <p class="card-text"> Mirë se vini në "Fork and Flame"
+                një destinacion ku shija dhe kreativiteti bashkohen për të krijuar përvoja të paharrueshme kulinare!</p>
+                      <a href="#menu" class="btn btn-primary">Menu</a>
+            
+          </div>
+    </div>
+</div>
+</div>
+</div>
+</section>
+
+      
+<section class="menu" id="menu">
+    <div class="container">
+      <div class="Titulli1">
+      <h2 style="color: #ff0000;"> Antipasta</h2></div>
+            <div class="c2">
+              <div class="card text-bg-warning mb-3" style="max-width: 18rem;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC8rG3diehqG6t3VMk-fn9BaopOOAJSVgkyA&s" class="card-img-top" alt="foto">
+                    <div class="card-body">
+                      <h5 class="card-title">Bukë e shtëpisë</h5>
+                      <p class="card-text">E freskët, e butë dhe e pjekur me dashuri, perfekte për çdo shoqërim në tryezën tuaj.</p>
+                    
+                  </div>
+            </div>
+        </div>
+        </div>
+  </div>
+ 
+   
+        <div class="c3">
+          <div class="card text-bg-warning mb-3" style="max-width: 18rem;">
+                <img src="https://i.ytimg.com/vi/8VCjpuIkrts/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDOd_HzYCGCP9zfLeRWNqxyy3rQ9A"  width="200" height="150" class="card-img-top" alt="foto">
+                <div class="card-body">
+                  <h5 class="card-title">Brusketa</h5>
+                  <p class="card-text">Kripeze krokante me domate të freskëta, borzilok aromatik dhe vaj ulliri ekstra të virgjër.</p>
+                
+              </div>
+        </div>
+    </div>
+    </div>
+  </div>
+  
+   
+        <div class="c1">
+          <div class="card text-bg-warning mb-3" style="max-width: 18rem;">
+                <img src="https://top-channel.tv/wp-content/uploads/2023/01/buk.jpg"  width="200" height="150" class="card-img-top" alt="foto">
+                <div class="card-body">
+                  <h5 class="card-title">Buke Misri</h5>
+                  <p class="card-text">E ngrohtë dhe e butë, e përgatitur me miell misri të verdhë, perfekte për ta shijuar me gjalpë të freskët ose djathë të bardhë.</p>
+                </div>
+        </div>
+    </div>
+   
+
+        <div class="c4">
+          <div class="card text-bg-warning mb-3" style="max-width: 18rem;">
+                <img src="https://agroweb.org/wp-content/uploads/2018/04/salce_kosi.jpg"  width="200" height="150" class="card-img-top" alt="foto">
+                <div class="card-body">
+                  <h5 class="card-title">Salce Kosi</h5>
+                  <p class="card-text">Kremoze dhe e freskët, e përgatitur me kos të butë dhe erëza të lehta, ideale për shoqërimin e çdo pjate.</p>
+                </div>
+        </div>
+    </div>
+   
+      
+        
+          <div class="Titulli2">
+          <h2 style="color: #ff8430;"> Supa dhe Sallata</h2></div>
+          <div class="cdd1">
+          <div class="card text-bg-warning mb-3" style="max-width: 18rem;">
+                <img src="https://telegrafi.com/wp-content/uploads/2016/12/Chicken-Caesar.jpg"  width="200" height="150" class="card-img-top" alt="foto">
+                <div class="card-body">
+                  <h5 class="card-title">Sallate Cezar</h5>
+                  <p class="card-text">një përzierje klasike e maruleve të freskëta, djathit parmixhano të grirë hollë, krutonëve të artë dhe salcës së pasur Cezar, e përsosur për çdo shije.</p>
+                </div>
+              </div>
+        </div>
+    
+        <div class="cdd2">
+            <div class="card text-bg-warning mb-3" style="max-width: 18rem;">
+                <img src="https://admin.albanianpost.com/wp-content/uploads/2021/04/1-79.jpg"  width="200" height="150" class="card-img-top" alt="foto">
+                <div class="card-body">
+                  <h5 class="card-title">Supe me Perime</h5>
+                  <p class="card-text">Një përzierje e ngrohtë dhe e shëndetshme e perimeve të freskëta, e gatuar me erëza natyrale për një shije të lehtë dhe ushqyese.</p>
+                
+              </div>
+        </div>
+    </div>
+
+        <div class="cdd3">
+          <div class="card text-bg-warning mb-3" style="max-width: 18rem;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZZZZjZf879WatthDCMnST1VIWWEJdGU4B0A&s"  width="200" height="150" class="card-img-top" alt="foto">
+                <div class="card-body">
+                  <h5 class="card-title">Supe me Mish</h5>
+                  <p class="card-text">Një pjatë e ngrohtë me copëza të buta mishi, perime të freskëta dhe erëza aromatike, e gatuar me dashuri për një shije tradicionale.</p>
+                
+              </div>
+        </div>
+    </div>
+  
+        <div class="cdd4">
+            <div class="card text-bg-warning mb-3" style="max-width: 18rem;">
+                <img src="https://boldbistro.al/wp-content/uploads/2024/10/Sallate-Fshati2.png"  width="200" height="150" class="card-img-top" alt="foto">
+                <div class="card-body">
+                  <h5 class="card-title">Sallate Fshati</h5>
+                  <p class="card-text">Një përzierje e freskët e domateve, trangujve, specave, qepëve, ullinjve dhe djathit të bardhë, e spërkatur me vaj ulliri dhe rigon.</p>
+                </div>
+        </div>
+    </div>
+
+  <div class="Titulli3">
+      <h2 style="color: #ffd900;"> Mish</h2></div>
+        <div class="cvd1">
+            <div class="card text-bg-warning mb-3" style="max-width: 18rem;">
+                <img src="https://sofraturke.com.al/wp-content/uploads/2022/07/fileto.jpg"  width="200" height="150" class="card-img-top" alt="foto">
+                <div class="card-body">
+                  <h5 class="card-title">Fileto</h5>
+                  <p class="card-text">Fileto e butë dhe e pjekur e pulës, e shoqëruar me erëza të freskëta dhe garniturë të lehtë sipas dëshirës.</p>
+                </div>
+              
+        </div>
+    </div>
+    </div>
+</div>
+
+        <div class="cvd2">
+            <div class="card text-bg-warning mb-3" style="max-width: 18rem;">
+                <img src="https://www.gastronomija.hr/wp-content/uploads/2012/02/biftek-s-povrcem.jpeg"  width="200" height="150" class="card-img-top" alt="foto">
+                <div class="card-body">
+                  <h5 class="card-title">Biftek</h5>
+                  <p class="card-text">Biftek i lëngshëm dhe i shijshëm, i gatuar sipas preferencës, i shoqëruar me garniturë të përzgjedhur dhe salcë aromatike.</p>
+                </div>
+              </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+        <div class="cvd3">
+            <div class="card text-bg-warning mb-3" style="max-width: 18rem;">
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/12/f1/49/c3/qingj-ne-hell.jpg"  width="200" height="150" class="card-img-top" alt="foto">
+                <div class="card-body">
+                  <h5 class="card-title">Qingj ne Hell</h5>
+                  <p class="card-text">Copëza të shijshme dhe të lëngshme qengji të pjekura ngadalë në hell, me aromë erëzash tradicionale dhe shije autentike.</p>
+                </div>
+              </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+        <div class="cvd4">
+            <div class="card text-bg-warning mb-3" style="max-width: 18rem;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTks5D0ZSEzTz4pLbGix2SxmqTqtCHczBh0RA&s"  width="200" height="150" class="card-img-top" alt="foto">
+                <div class="card-body">
+                  <h5 class="card-title">Kec</h5>
+                  <p class="card-text">Copëza të buta dhe të shijshme mishi keci, të pjekura ngadalë për një shije të pasur dhe të përkryer, të shoqëruara me garniturë sipas dëshirës.</p>
+                </div>
+              </div>
+        </div>
+  
+
+        <div class="Titulli4">
+          <h2 style="color: #ff0000;">Pasta dhe Rizoto</h2></div>
+          <div class="a1">
+          <div class="card text-bg-warning mb-3" style="max-width: 18rem;">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXsMDOhnwuBvl0pcN14PofKJWPFM0tJHWfJg&s"  width="200" height="150" class="card-img-top" alt="foto">
+              <div class="card-body">
+                <h5 class="card-title">Spagehtti Carbonara</h5>
+                <p class="card-text"> Spageti të ziera al dente, të përziera me salcë kremoze nga veza, djathi Pecorino Romano, guanciale i skuqur dhe piper i zi për një shije autentike italiane.</p>
+              </div>
+            </div>
+      </div>
+  </div>
+  </div>
+</div>
+
+      <div class="a2">
+          <div class="card text-bg-warning mb-3" style="max-width: 18rem;">
+              <img src="https://www.kosovarja-ks.com/wp-content/uploads/2022/03/spaghetti-pomodorini.jpg"  width="200" height="150" class="card-img-top" alt="foto">
+              <div class="card-body">
+                <h5 class="card-title">Spagehtti me Pomodorini</h5>
+                <p class="card-text"> Spageti të ziera al dente, të shoqëruara me salcë të freskët domatesh qershi, vaj ulliri ekstra të virgjër, hudhër dhe borzilok aromatik.</p>
+              </div>
+            </div>
+      </div>
+  </div>
+  </div>
+</div>
+
+      <div class="a3">
+          <div class="card text-bg-warning mb-3" style="max-width: 18rem;">
+              <img src="https://www.kitchensanctuary.com/wp-content/uploads/2019/09/Spaghetti-Bolognese-square-FS-0204.jpg"  width="200" height="150" class="card-img-top" alt="foto">
+              <div class="card-body">
+                <h5 class="card-title">Spagehtti Bolognese</h5>
+                <p class="card-text"> Spageti të ziera al dente, të servirura me një salcë të pasur dhe të shijshme me mish të grirë, domate të freskëta, dhe erëza mesdhetare.</p>
+              </div>
+            </div>
+      </div>
+  </div>
+  </div>
+</div>
+
+      <div class="a4">
+          <div class="card text-bg-warning mb-3" style="max-width: 18rem;">
+              <img src="https://cdnimpuls.com/living.al/images/articles/rozmi_ok_117202854.jpg"  width="200" height="150" class="card-img-top" alt="foto">
+              <div class="card-body">
+                <h5 class="card-title">Rizoto me Kerpudha</h5>
+                <p class="card-text"> Oriz kremoze i gatuar me kërpudha të freskëta, djathë Parmigiano dhe një prekje erëzash për një shije të pasur dhe delikate.</p>
+              </div>
+            </div>
+      </div>
+  
+
+      <div class="Titulli5">
+        <h2 style="color: #ff8400;">Embelsira</h2></div>
+      <div class="e1">
+          <div class="card text-bg-warning mb-3" style="max-width: 18rem;">
+              <img src="file:///C:/Users/emali/Downloads/DALL%C2%B7E%202025-01-04%2017.47.16%20-%20A%20close-up%20photographic%20image%20of%20a%20classic%20tiramisu%20dessert,%20served%20in%20a%20glass%20container%20with%20visible%20layers%20of%20mascarpone%20cream,%20coffee-soaked%20ladyfi.webp" width="100" height="150"   class="card-img-top" alt="foto">
+              <div class="card-body">
+                <h5 class="card-title">Tiramisu</h5>
+                <p class="card-text"> Një ëmbëlsirë italiane e pasur, me shtresa biskotash të ngopura me kafe dhe mascarpone kremoze.</p>
+              </div>
+            </div>
+      </div>
+  
+
+      <div class="e2">
+          <div class="card text-bg-warning mb-3" style="max-width: 18rem;">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtERYgbE2PjgHu1pm2f-sDMu6w4Zm-O938LA&s"  width="100" height="150"  class="card-img-top" alt="foto">
+              <div class="card-body">
+                <h5 class="card-title">Krem Karamel</h5>
+                <p class="card-text"> Një ëmbëlsirë e butë dhe kremoze, me shije karamele të ngrohtë, e shoqëruar me një shtresë të hollë karamele.</p>
+              </div>
+            </div>
+      </div>
+
+      <div class="e3">
+          <div class="card text-bg-warning mb-3" style="max-width: 18rem;">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0310JmgmCGTzb4CCONsLMbizsc-2hyYNajw&s"  width="100" height="150" class="card-img-top" alt="foto">
+              <div class="card-body">
+                <h5 class="card-title">Akullore</h5>
+                <p class="card-text"> Një ëmbëlsirë e ftohtë dhe e kremtë, e bërë nga qumësht, krem dhe shije të ndryshme si vanilje, çokollatë, fruta të freskëta apo karamel.</p>
+              </div>
+            </div>
+      </div>
+  
+
+      <div class="e4">
+          <div class="card text-bg-warning mb-3" style="max-width: 18rem;">
+              <img src="https://www.jocooks.com/wp-content/uploads/2018/11/cheesecake-1-22.jpg"  width="100" height="150" class="card-img-top" alt="foto">
+              <div class="card-body">
+                <h5 class="card-title">Cheescake</h5>
+                <p class="card-text"> Një ëmbëlsirë e butë dhe kremoze me bazë biskote të kripura, e mbushur me krem djathi.</p>
+              </div>
+            </div>
+      </div>
+  
+  
+</section>
+<div class="Titulli6">
+<h2 style="color: #eeff00;">Pjet</h2></div>
+      <div class="tr1">
+          <div class="card text-bg-warning mb-3" style="max-width: 18rem;">
+              <img src="https://media.istockphoto.com/id/508708898/photo/pepsi-coca-cola-and-fanta-soda-drinks.jpg?s=612x612&w=0&k=20&c=eCfQiiC1kP-bXYYgvizxu4-dnm463Tedo4YqyJP7yqY=" width="100" height="150"   class="card-img-top" alt="foto">
+              <div class="card-body">
+                <h5 class="card-title">Coca-Cola/Fanta/Pepsi</h5>
+                <p class="card-text"> Pije të gazuara të ftohta, të servirura me akull dhe një fetë limoni.</p>
+              </div>
+            </div>
+      </div>
+  
+
+      <div class="tr2">
+          <div class="card text-bg-warning mb-3" style="max-width: 18rem;">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwyFB5G1XpQgfBoC0TEOkKKGkIdYY4UorozA&s"  width="100" height="150"  class="card-img-top" alt="foto">
+              <div class="card-body">
+                <h5 class="card-title">Birrë</h5>
+                <p class="card-text">Një gotë birre të freskët, me shkumë të lehtë në sipërfaqe.</p>
+              </div>
+            </div>
+      </div>
+
+      <div class="tr3">
+          <div class="card text-bg-warning mb-3" style="max-width: 18rem;">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0310JmgmCGTzb4CCONsLMbizsc-2hyYNajw&s"  width="100" height="150" class="card-img-top" alt="foto">
+              <div class="card-body">
+                <h5 class="card-title">Kafe</h5>
+                <p class="card-text">Një filxhan kafeje aromatike, e servirur e nxehtë me ose pa qumësht.</p>
+              </div>
+            </div>
+      </div>
+  
+
+  
+<section class="reservations" id="reservations">
+  <div class="reservation-form">
+    <h2 style="color: rgb(255, 0, 0);">Make a Reservation</h2>
+    <form>
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <label for="inputPassword5" class="form-label"><h6 style="color: #f6e0a3;">Password</label></h6>
+<input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+<div id="passwordHelpBlock" class="form-text"><h6 style="color: #f6e0a3;">
+  Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.</h6>
+<select class="form-select" aria-label="Default select example">
+  <option selected>Gender</option>
+  <option value="1">Female</option>
+  <option value="2">Male</option>
+  <option value="3">Rather not to say</option>
+  <h6 style="color: #f6e0a3;">Nr.Telefonit</h6> <input type="tel" name="phone" placeholder="Phone Number" required>
+    <div class="col-md-4">
+      <label for="inputState" class="form-label"><h6 style="color: #f6e0a3;">City</label></h6>
+      <select id="inputState" class="form-select">
+        <option selected><h5 style="border: #f6e0a3;">Choose</option></h5>
+        <option>Beratv</option>
+        <option>Kuçovë</option>
+        <option>Ura Vajgurore (Dimal)</option>
+        <option> Poliçan</option>
+        <option>  Peshkopi</option>
+        <option>Bulqizë</option>
+        <option>Klos</option>
+        <option> Durrës</option>
+        <option>Shijak</option>
+        <option> Elbasan</option>
+        <option>Cerrik</option>
+        <option>Belsh</option>
+        <option>Peqin</option>
+        <option>Librazhd</option>
+        <option>Fier</option>
+        <option>Lushnjë</option>
+        <option>Patos</option>
+        <option>Roskovec</option>
+        <option>Ballsh (Mallakastër)</option>
+        <option>Gjirokastër</option>
+        <option>Tepelenë</option>
+        <option>Memaliaj</option>
+        <option>Korçë</option>
+        <option>Pogradec</option>
+        <option>Maliq</option>
+        <option>Ersekë</option>
+        <option>Bilisht</option>
+        <option>Leskovik</option>
+        <option>Kukës</option>
+        <option>Bajram Curri (Tropojë)</option>
+        <option>Has</option>
+        <option>Lezhë</option>
+        <option>Laç (Kurbin)</option>
+        <option>Rrëshen (Mirditë</option>)
+        <option>Shkodër</option>
+        <option>Pukë</option>
+        <option>Vau i Dejës</option>
+        <option> Fushë-Arrëz</option>
+        <option> Tiranë</option>
+        <option>Kamëz</option>
+        <option> Vorë</option>
+        <option> Kavaje</option>
+        <option>Vlorë</option>
+        <option>Himarë</option>
+        <option>Sarandë</option>
+        <option>Selenicë</option>
+      </select>
+      <input type="date" name="date" required><h6 style="color: #f6e0a3;">Data</h6>
+      <h6 style="color: #f6e0a3;">Ora</h6>
+      <input type="time" name="time" required>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+</section>
+</select>
+<section class="Contact" id="Contact">
+<footer>
+  <ul>
+      <li>
+          <a href="https://www.instagram.com/shkolla_hermann_gmeiner/?hl=en" target="_blank">
+              Hermann_Gmeiner
+          </a>
+      </li>
+      <li>
+          <a href="https://web.facebook.com/hermanngmeinerTIK/?locale=sq_AL&_rdc=1&_rdr#" target="_blank">
+              hermann_gmeiner
+          </a>
+      </li>
+      <li>
+          <a href="https://sq.wikipedia.org/wiki/Herman_Gmeiner_(Shkolla)" target="_blank">
+              Wikipedia
+          </a>
+      </li>
+  </ul>
+</footer>
+</section>
+</body>
+</html>
+
+
+
+
+
+    
