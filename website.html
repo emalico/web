@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #0056b3;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .banner {
+            text-align: center;
+            padding: 50px;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .product img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            cursor: pointer;
+        }
+
+        .product h3 {
+            margin: 10px 0;
+        }
+
+        .product p {
+            color: #555;
+        }
+
+        .product button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            width: 100%;
+            border-top: 1px solid #ddd;
+        }
+
+        .product button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f1f1f1;
+            margin-top: 20px;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            max-width: 80%;
+            max-height: 80%;
+        }
+
+        .modal-content img {
+            width: 100%;
+            height: auto;
+        }
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Online Shopping</h1>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+</nav>
+
+<section class="banner">
+    <h2>Find the best deals on your favorite products!</h2>
+    <p>Shop now and enjoy exclusive discounts.</p>
+</section>
+
+<section id="products" class="products">
+    <div class="product">
+        <img src="https://static.bershka.net/assets/public/cfca/3d5e/454e4d569188/f792a8129276/0501417152504-a3f/0501417152504-a3f.jpg?ts=1719327413525&w=1920" alt="Product 1" onclick="openModal(this)">
+        <h3>Product 1</h3>
+        <p>$10.99</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="https://static.bershka.net/assets/public/a9e5/cbe7/ee8041779bde/57b042e26a47/07069700605-p/07069700605-p.jpg?ts=1729087785853&w=800" alt="Product 2" onclick="openModal(this)">
+        <h3>Product 2</h3>
+        <p>$15.99</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="https://static.bershka.net/assets/public/2d73/ced9/f9d24633b8c5/0309d6894755/09031668711-p/09031668711-p.jpg?ts=1724839697397&w=800" alt="Product 3" onclick="openModal(this)">
+        <h3>Product 3</h3>
+        <p>$8.99</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="https://static.bershka.net/assets/public/b10d/8ec6/e4be475cab87/6847a4d0c2a9/07222187812-p/07222187812-p.jpg?ts=1726821749504&w=750" alt="Product 4" onclick="openModal(this)">
+        <h3>Product 4</h3>
+        <p>$12.99</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="https://static.bershka.net/assets/public/66d2/7233/f28c4c7fa20d/690db9b40ed1/0526753442804-a3f/0526753442804-a3f.jpg?ts=1717488169643&w=750" alt="Product 5" onclick="openModal(this)">
+        <h3>Product 5</h3>
+        <p>$18.99</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="https://static.bershka.net/assets/public/7783/e8bf/f5c64ef69ccc/b6b07bf6915f/04616048250-a2d/04616048250-a2d.jpg?ts=1736855236605&w=750" alt="Product 6" onclick="openModal(this)">
+        <h3>Product 6</h3>
+        <p>$9.99</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="https://static.bershka.net/assets/public/ef80/9453/509544a380f7/635f3f20524e/0928070270003-p/0928070270003-p.jpg?ts=1727774423984&w=750" alt="Product 7" onclick="openModal(this)">
+        <h3>Product 7</h3>
+        <p>$7.99</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="https://static.bershka.net/assets/public/7175/fb75/ff9242e4a704/432d8e3383c2/09295626622-p/09295626622-p.jpg?ts=1716803794607&w=750" alt="Product 8" onclick="openModal(this)">
+        <h3>Product 8</h3>
+        <p>$14.99</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="https://static.bershka.net/assets/public/9fb2/1e21/0f1e4889ae83/afd57556e538/01525752251-p/01525752251-p.jpg?ts=1737044211388&w=750" alt="Product 9" onclick="openModal(this)">
+        <h3>Product 9</h3>
+        <p>$19.99</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="https://static.bershka.net/assets/public/ab66/e0e0/d7d84cf699c2/477a4155d6c0/0857220080003-a3o/0857220080003-a3o.jpg?ts=1723632540912&w=750" alt="Product 10" onclick="openModal(this)">
+        <h3>Product 10</h3>
+        <p>$16.99</p>
+        <button>Add to Cart</button>
+    </div>
+</section>
+
+<div id="imageModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+        <img id="modalImage" src="" alt="Full Image">
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Online Shopping. All rights reserved.</p>
+</footer>
+
+<script>
+    function openModal(image) {
+        const modal = document.getElementById('imageModal');
+        const modalImage = document.getElementById('modalImage');
+        modalImage.src = image.src;
+        modal.style.display = 'block';
+    }
+
+    function closeModal() {
+        const modal = document.getElementById('imageModal');
+        modal.style.display = 'none';
+    }
+</script>
+
+</body>
+</html>
