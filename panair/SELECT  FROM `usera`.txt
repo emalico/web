@@ -1,0 +1,11 @@
+SELECT * FROM `usera`
+kjo eshte nje query per shfaqen e te dhenave ne tabelen usera
+
+INSERT INTO `usera` (`id`, `name`, `email`, `password`) VALUES ('1', 'Ema', 'emalicohii@gmail.com', 'emalico2008!');
+query per shtimin e rekordeve ne tabele
+
+UPDATE `usera` SET `email` = 'emalicohii@gmail.comm' WHERE `usera`.`id` = 1;
+update I query
+
+"DELETE FROM usera WHERE `usera`.`id` = 1"?
+delete

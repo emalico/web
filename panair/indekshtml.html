@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cherry on Top</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel = "stylesheet" href = "bootstrap-5.0.2-dist/css/bootstrap.min.css">
+   
+    <link rel = "stylesheet" href = "lolccss.css">
+</head>
+<body>
+    <nav class = "navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+        <div class = "container">
+            <a class = "navbar-brand d-flex justify-content-between align-items-center order-lg-0" href = "index.html">
+                <img src = "file:///C:/Users/emali/Downloads/b6c8c455-4bdd-4e35-9e2a-420e438a9ede%20(1).webp"  width="200" height="60">
+                <span class = "text-uppercase fw-lighter ms-2">Cherry on Top</span>
+            </a>
+
+            <div class = "order-lg-2 nav-btns">
+                <button type = "button" class = "btn position-relative">
+                    <i class = "fa fa-shopping-cart"></i>
+                    <span class = "position-absolute top-0 start-100 translate-middle badge bg-primary">5</span>
+                </button>
+                <button type = "button" class = "btn position-relative">
+                    <i class = "fa fa-heart"></i>
+                    <span class = "position-absolute top-0 start-100 translate-middle badge bg-primary">2</span>
+                </button>
+                <button type = "button" class = "btn position-relative">
+                    <i class = "fa fa-search"></i>
+                </button>
+            </div>
+
+            <button class = "navbar-toggler border-0" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navMenu">
+                <span class = "navbar-toggler-icon"></span>
+            </button>
+
+            <div class = "collapse navbar-collapse order-lg-1" id = "navMenu">
+                <ul class = "navbar-nav mx-auto text-center">
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "#header">home</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "#collection">collection</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "#special">specials</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "#blogs">blogs</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "#about">about us</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2 border-0">
+                        <a class = "nav-link text-uppercase text-dark" href = "#popular">popular</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+   
+    <header id = "header" class = "vh-100 carousel slide" data-bs-ride = "carousel" style = "padding-top: 104px;">
+        <div class = "container h-100 d-flex align-items-center carousel-inner">
+            <div class = "text-center carousel-item active">
+                <img src="https://enniskillen.com/wp-content/uploads/2023/12/GD_Website_Images-62.png" class="d-block w-100" alt="ok" height="600" width="200">
+                <h2 class = "text-capitalize text-white">Best collection</h2>
+                <h1 class = "text-uppercase py-2 fw-bold text-white">New arrivals</h1>
+                <a href = "#" class = "btn mt-3 text-uppercase">Shop now</a>
+            </div>
+            <div class = "text-center carousel-item">
+                <img src="https://s3-eu-west-1.amazonaws.com/images.pxlpartner.ch/n250006927/orig/250058729.jpg" class="d-block w-100" alt="ok" height="600" width="200">
+                <h2 class = "text-capitalize text-white">Best price & offer</h2>
+                <h1 class = "text-uppercase py-2 fw-bold text-white">New season</h1>
+                <a href = "#" class = "btn mt-3 text-uppercase">Buy now</a>
+            </div>
+        </div>
+
+        <button class = "carousel-control-prev" type = "button" data-bs-target="#header" data-bs-slide = "prev">
+            <span class = "carousel-control-prev-icon"></span>
+        </button>
+        <button class = "carousel-control-next" type = "button" data-bs-target="#header" data-bs-slide = "next">
+            <span class = "carousel-control-next-icon"></span>
+        </button>
+    </header>
+    <section id = "collection" class = "py-5">
+        <div class = "container">
+            <div class = "title text-center">
+                <h2 class = "position-relative d-inline-block">New Collection</h2>
+            </div>
+
+            <div class = "row g-0">
+                <div class = "d-flex flex-wrap justify-content-center mt-5 filter-button-group">
+                    <button type = "button" class = "btn m-2 text-dark active-filter-btn" data-filter = "*">All</button>
+                    <button type = "button" class = "btn m-2 text-dark" data-filter = ".best">Best Sellers</button>
+                    <button type = "button" class = "btn m-2 text-dark" data-filter = ".feat">Featured</button>
+                    <button type = "button" class = "btn m-2 text-dark" data-filter = ".new">New Arrival</button>
+                </div>
+
+                <div class = "collection-list mt-4 row gx-0 gy-3">
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
+                        <div class = "collection-img position-relative">
+                            <img src = "file:///C:/Users/emali/OneDrive/Desktop/fol/dress.webp" class = "w-100" width="100" height="250">
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class = "text-center">
+                            <div class = "rating mt-3">
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            </div>
+                            <p class = "text-capitalize my-1">Dress</p>
+                            <span class = "fw-bold">$ 45.50</span>
+                        </div>
+                    </div>
+
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                        <div class = "collection-img position-relative">
+                            <img src = "file:///C:/Users/emali/OneDrive/Desktop/fol/1702488169518-allmarketsmobile375x400pxx4jpg.jpg" class = "w-100" width="100" height="250">
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class = "text-center">
+                            <div class = "rating mt-3">
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            </div>
+                            <p class = "text-capitalize my-1">Coco chanel</p>
+                            <span class = "fw-bold">$ 155.50</span>
+                        </div>
+                    </div>
+
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 new">
+                        <div class = "collection-img position-relative">
+                            <img src = "file:///C:/Users/emali/OneDrive/Desktop/fol/adidas.avif" class = "w-100" width="100" height="250">
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class = "text-center">
+                            <div class = "rating mt-3">
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            </div>
+                            <p class = "text-capitalize my-1">Aiddas</p>
+                            <span class = "fw-bold">$ 40.20</span>
+                        </div>
+                    </div>
+
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
+                        <div class = "collection-img position-relative">
+                            <img src = "file:///C:/Users/emali/OneDrive/Desktop/fol/bag.jpg" class = "w-100" width="100" height="250">
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class = "text-center">
+                            <div class = "rating mt-3">
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            </div>
+                            <p class = "text-capitalize my-1">YSL bag</p>
+                            <span class = "fw-bold">$ 345.50</span>
+                        </div>
+                    </div>
+
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                        <div class = "collection-img position-relative">
+                            <img src = "file:///C:/Users/emali/OneDrive/Desktop/fol/cargo%20pants.webp" class = "w-100" width="100" height="300" >
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class = "text-center">
+                            <div class = "rating mt-3">
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            </div>
+                            <p class = "text-capitalize my-1">Cargo pants</p>
+                            <span class = "fw-bold">$ 75.00</span>
+                        </div>
+                    </div>
+
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 new">
+                        <div class = "collection-img position-relative">
+                            <img src = "file:///C:/Users/emali/OneDrive/Desktop/fol/dress2.webp" class = "w-100" width="100" height="300">
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class = "text-center">
+                            <div class = "rating mt-3">
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            </div>
+                            <p class = "text-capitalize my-1">Classic dress</p>
+                            <span class = "fw-bold">$ 205.50</span>
+                        </div>
+                    </div>
+
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best" width="100" height="250">
+                        <div class = "collection-img position-relative">
+                            <img src = "file:///C:/Users/emali/OneDrive/Desktop/fol/green%20shirt.webp" class = "w-100" width="100" height="300">
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class = "text-center">
+                            <div class = "rating mt-3">
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            </div>
+                            <p class = "text-capitalize my-1">Green shirt</p>
+                            <span class = "fw-bold">$ 60.89</span>
+                        </div>
+                    </div>
+
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                        <div class = "collection-img position-relative">
+                            <img src = "file:///C:/Users/emali/OneDrive/Desktop/fol/konvers.webp" class = "w-100" width="100" height="300">
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class = "text-center">
+                            <div class = "rating mt-3">
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            </div>
+                            <p class = "text-capitalize my-1">Converse Black</p>
+                            <span class = "fw-bold">$ 66.58</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id = "special" class = "py-5">
+        <div class = "container">
+            <div class = "title text-center py-5">
+                <h2 class = "position-relative d-inline-block">Special Selection</h2>
+            </div>
+
+            <div class = "special-list row g-0">
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class = "special-img position-relative overflow-hidden">
+                        <img src = "file:///C:/Users/emali/OneDrive/Desktop/fol/pants.webp" class = "w-100" width="100" height="300">
+                        <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class = "fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class = "text-center">
+                        <p class = "text-capitalize mt-3 mb-1">Classic pants</p>
+                        <span class = "fw-bold d-block">$ 45.50</span>
+                        <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class = "special-img position-relative overflow-hidden">
+                        <img src = "file:///C:/Users/emali/OneDrive/Desktop/fol/pantsss.webp" class = "w-100" width="100" height="300">
+                        <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class = "fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class = "text-center">
+                        <p class = "text-capitalize mt-3 mb-1">Baggy pants</p>
+                        <span class = "fw-bold d-block">$ 40.99</span>
+                        <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class = "special-img position-relative overflow-hidden">
+                        <img src = "file:///C:/Users/emali/OneDrive/Desktop/fol/polo.avif" class = "w-100" width="100" height="300">
+                        <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class = "fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class = "text-center">
+                        <p class = "text-capitalize mt-3 mb-1">Polo</p>
+                        <span class = "fw-bold d-block">$ 400.00</span>
+                        <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class = "special-img position-relative overflow-hidden">
+                        <img src = "file:///C:/Users/emali/OneDrive/Desktop/fol/red%20bb%20top.avif" class = "w-100" width="100" height="300">
+                        <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class = "fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class = "text-center">
+                        <p class = "text-capitalize mt-3 mb-1">Red top</p>
+                        <span class = "fw-bold d-block">$ 4.50</span>
+                        <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+   
+    <section id = "blogs" class = "py-5">
+        <div class = "container">
+            <div class = "title text-center py-5">
+                <h2 class = "position-relative d-inline-block">Our Latest Blog</h2>
+            </div>
+
+            <div class = "row g-3">
+                <div class = "card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                    <img src = "file:///C:/Users/emali/OneDrive/Desktop/fol/full-size-photo-impressed-girl-dressed-print-blouse-hold-shopping-bags-indicating-logo-empty-space-isolated-full-size-342936100.webp" alt = "">
+                    <div class = "card-body px-0">
+                        <h4 class = "card-title">The Best Online Shopping Experience Quality, Convenience, and Amazing Discounts!!</h4>
+                        <p class = "card-text mt-3 text-muted">In the digital era, online shopping has become an essential part of our daily lives. At Cherry on Top, we offer a seamless and secure platform to find everything you need, from the latest fashion trends to cutting-edge tech gadgets.</p>
+                        <p class = "card-text">
+                            <small class = "text-muted">
+                               
+                            </small>
+                        </p>
+                    </div>
+                </div>
+
+                <div class = "card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                    <div class = "card-body px-0">
+                        <h4 class = "card-title">Your Ultimate Online Shopping Destination: Convenience, Quality & Unbeatable Deals!</h4>
+                        <p class = "card-text mt-3 text-muted">
+
+                            <p>Why Shop With Us?</p>
+                        </p>🛍 A Wide Selection of Products: From fashion to tech, beauty to home essentials, we’ve got it all!</p>
+                            
+                    </p> 💰 Exclusive Discounts & Best Deals: Save more with daily offers, flash sales, and seasonal promotions.</p>
+                            
+                </p> 🚚 Fast & Reliable Shipping: Enjoy quick deliveries and real-time tracking to keep you updated.</p>
+                            
+            </p>   🔒 Secure Shopping & Payments: Shop with confidence using safe payment options, including credit cards, PayPal, and more.</p>
+
+       
+        <img src = "file:///C:/Users/emali/OneDrive/Desktop/fol/shoppping.jpg" alt = "" width="400" height="300"> 
+                        <p class = "card-text">
+                            <small class = "text-muted">
+                               
+                            </small>
+                        </p>
+                    </div>
+                </div>
+
+                <div class = "card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                    <img src = "file:///C:/Users/emali/OneDrive/Desktop/fol/kid.webp" alt = "">
+                    <div class = "card-body px-0">
+                        <h4 class = "card-title">Our Promise</h4>
+                        <p class = "card-text mt-3 text-muted">At Cherry on op, we believe that shopping should be exciting and stress-free. That’s why we’re committed to providing top-notch customer service, high-quality products, and a seamless shopping experience from start to finish.
+
+                            Join thousands of happy customers and start shopping with confidence today!</p>
+                        <p class = "card-text">
+                            <small class = "text-muted">
+                               
+                            </small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="popular" class="py-5">
+        <div class="container">
+            <div class="title text-center pt-3 pb-5">
+                <h2 class="position-relative d-inline-block ms-4">Popular Of This Year</h2>
+            </div>
+    
+            <div class="row">
+                <!-- Pjesa e parë - 4 produkte -->
+                <div class="col-lg-6">
+                    <h3 class="fs-4 fw-bold mb-4">Top Rated</h3>
+                    <div class="row g-4">
+                        <div class="col-6 d-flex align-items-start">
+                            <img src="file:///C:/Users/emali/OneDrive/Desktop/fol/saint-laurent.avif" class="img-fluid w-50 pe-3">
+                            <div>
+                                <p class="mb-1 fs-5 fw-semibold">YSL heels</p>
+                                <span class="text-danger fw-bold">$ 620.00</span>
+                            </div>
+                        </div>
+                        <div class="col-6 d-flex align-items-start">
+                            <img src="file:///C:/Users/emali/OneDrive/Desktop/fol/shirt%20cowboy.avif" class="img-fluid w-50 pe-3">
+                            <div>
+                                <p class="mb-1 fs-5 fw-semibold">Cowboy shirt</p>
+                                <span class="text-danger fw-bold">$ 20.00</span>
+                            </div>
+                        </div>
+                        <div class="col-6 d-flex align-items-start">
+                            <img src="file:///C:/Users/emali/OneDrive/Desktop/fol/s-l640.jpg" class="img-fluid w-50 pe-3">
+                            <div>
+                                <p class="mb-1 fs-5 fw-semibold">YSL perfume</p>
+                                <span class="text-danger fw-bold">$ 920.00</span>
+                            </div>
+                        </div>
+                        <div class="col-6 d-flex align-items-start">
+                            <img src="file:///C:/Users/emali/OneDrive/Desktop/fol/smokin%202.jpg" class="img-fluid w-50 pe-3">
+                            <div>
+                                <p class="mb-1 fs-5 fw-semibold">Smoking</p>
+                                <span class="text-danger fw-bold">$ 320.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Pjesa e dytë - 4 produkte -->
+                <div class="col-lg-6">
+                    <h3 class="fs-4 fw-bold mb-4">Best Selling</h3>
+                    <div class="row g-4">
+                        <div class="col-6 d-flex align-items-start">
+                            <img src="file:///C:/Users/emali/OneDrive/Desktop/valentino.webp" class="img-fluid w-50 pe-3">
+                            <div>
+                                <p class="mb-1 fs-5 fw-semibold">Valentino heels</p>
+                                <span class="text-danger fw-bold">$ 420.00</span>
+                            </div>
+                        </div>
+                        <div class="col-6 d-flex align-items-start">
+                            <img src="file:///C:/Users/emali/OneDrive/Desktop/fol/ferrari.webp" class="img-fluid w-50 pe-3">
+                            <div>
+                                <p class="mb-1 fs-5 fw-semibold">Ferrari jacket</p>
+                                <span class="text-danger fw-bold">$ 80.00</span>
+                            </div>
+                        </div>
+                        <div class="col-6 d-flex align-items-start">
+                            <img src="https://saint-laurent.dam.kering.com/m/495772cf7b101c21/Medium2-671762Y99011000_A.jpg?v=3" class="img-fluid w-50 pe-3">
+                            <div>
+                                <p class="mb-1 fs-5 fw-semibold">YSL glasses</p>
+                                <span class="text-danger fw-bold">$ 210.00</span>
+                            </div>
+                        </div>
+                        <div class="col-6 d-flex align-items-start">
+                            <img src="https://cdn.prod.website-files.com/5b4a3b3971d099f78f362505/656fc2158a2087beebb58c9a_2022-Porsche-911-Carrera-Cabriolet-Guards-Red-WP0CA2A96NS236814_010.webp" class="img-fluid w-50 pe-3">
+                            <div>
+                                <p class="mb-1 fs-5 fw-semibold">Porche 911 Cabriolette Panamera red</p>
+                                <span class="text-danger fw-bold">$ 19920.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id = "newsletter" class = "py-5">
+        <div class = "container">
+            <div class = "d-flex flex-column align-items-center justify-content-center">
+                <div class = "title text-center pt-3 pb-5">
+                    <h2 class = "position-relative d-inline-block ms-4">Newsletter Subscription</h2>
+                </div>
+
+                <p class = "text-center text-muted">Want to be the first to know about exclusive deals, new arrivals, and special promotions? Join our email list and never miss out on the best shopping offers!</p>
+                <div class = "input-group mb-3 mt-3">
+                    <input type = "text" class = "form-control" placeholder="Enter Your Email ...">
+                    <button class = "btn btn-primary" type = "submit">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of newsletter -->
+
+    <!-- footer -->
+    <footer class = "bg-dark py-5">
+        <div class = "container">
+            <div class = "row text-white g-4">
+                <div class = "col-md-6 col-lg-3">
+                    <a class = "text-uppercase text-decoration-none brand text-white" href = "index.html">Cherry on Top</a>
+                    <p class = "text-white text-muted mt-3">Welcome to Cherry on Top, your go-to destination for trendsetting fashion, styling tips, and outfit inspiration.
+
+                        Explore now and redefine your fashion game. 🍒</p>
+                </div>
+
+                <div class = "col-md-6 col-lg-3">
+                    <h5 class = "fw-light">Links</h5>
+                    <ul class = "list-unstyled">
+                        <li class = "my-3">
+                            <a href = "#" class = "text-white text-decoration-none text-muted">
+                                <i class = "fas fa-chevron-right me-1"></i> Home
+                            </a>
+                        </li>
+                        <li class = "my-3">
+                            <a href = "#" class = "text-white text-decoration-none text-muted">
+                                <i class = "fas fa-chevron-right me-1"></i> Collection
+                            </a>
+                        </li>
+                        <li class = "my-3">
+                            <a href = "#" class = "text-white text-decoration-none text-muted">
+                                <i class = "fas fa-chevron-right me-1"></i> Blogs
+                            </a>
+                        </li>
+                        <li class = "my-3">
+                            <a href = "#" class = "text-white text-decoration-none text-muted">
+                                <i class = "fas fa-chevron-right me-1"></i> About Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class = "col-md-6 col-lg-3">
+                    <h5 class = "fw-light mb-3">Contact Us</h5>
+                    <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class = "me-3">
+                            <i class = "fas fa-map-marked-alt"></i>
+                        </span>
+                        <span class = "fw-light">
+                            Hermann Gmeiner, Tirana, Albania
+                        </span>
+                    </div>
+                    <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class = "me-3">
+                            <i class = "fas fa-envelope"></i>
+                        </span>
+                        <span class = "fw-light">
+                            emalicohii@gmail.com
+                        </span>
+                    </div>
+                    <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class = "me-3">
+                            <i class = "fas fa-phone-alt"></i>
+                        </span>
+                        <span class = "fw-light">
+                            +355 68 898 0316
+                        </span>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-3">
+                    <h5 class = "fw-light mb-3">Follow Us</h5>
+                    <div>
+                        <ul class = "list-unstyled d-flex">
+                            <li>
+                                <a href = "https://www.instagram.com/" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class = "fab fa-instagram"><ema class="lico">Ema.lico</ema></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class = "fab fa-pinterest"><ema class="lico">Ema.lico</ema></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+  
+
+
+
+    
+    <script src = "js/jquery-3.6.0.js"></script>
+   
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+  
+    <script src = "bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+   
+    <script src = "js/script.js"></script>
+</body>
+</html>
