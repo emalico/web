@@ -1,0 +1,341 @@
+.slider {
+  position: relative;
+  width: 80%; 
+  height: 300px; 
+  margin: 0 auto; 
+  overflow: hidden;
+}
+
+.slider img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  width: 80%; 
+  height: auto;
+  opacity: 0;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.slider img.active {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1); 
+}
+
+body {
+  background-color: #000000;
+  margin: 0;
+
+}
+header {
+  background-color: #000000;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 60px;
+  margin-left:50px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ff0000;
+}
+
+.hero {
+  height: 100vh;
+  background-image: url('authentic-italian-pasta.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  text-align: left;
+  color: #fff;
+}
+
+.hero-content {
+  max-width: 600px;
+  padding: 40px;
+  margin-bottom :100px;
+  margin-left: 4%;
+  
+}
+
+.hero-content h1 {
+  font-family: fantasy;
+  font-size: 80px;
+  padding-top: 50px;
+  margin-bottom: 30px;
+}
+
+.hero-content p {
+  font-family: fantasy;
+  font-size: 30px;
+  padding-top: 50px;
+  margin-bottom: 30px;
+}
+
+.about {
+  height: 100vh;
+  background-image: url('tomato.jpg');
+  background-size: contain;
+  background-repeat: no-repeat; 
+  background-position: center; 
+  display: flex;
+  align-items: center;
+  padding: 80px 0;
+}
+
+.about-content {
+  flex: 1;
+  max-width: 600px;
+  padding-right: 50px;
+  color: #fff;
+  margin-left: 5%;
+  
+}
+
+.about h2 {
+  font-family: fantasy;
+  font-size: 38px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-family: fantasy;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.about-image {
+  max-width: 50%;
+  margin-right: 5%;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.dark-theme {
+  background-color: #070e16;
+}
+.menu {
+  padding: 80px 0;
+  text-align: center;
+  background-color: #000000;
+}
+.menu {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.menu h2 {
+  font-family: fantasy;
+  text-align: center;
+  text-decoration-color: #000000;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.menu-item {
+  width: 250px;
+  text-align: center;
+  border: 1px solid #c9580d;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  background-color: #ffae70;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item img {
+  width: 100%; 
+  height: auto; 
+  border-radius: 10px; 
+  cursor: pointer;
+  transition: transform 0.3s ease; 
+}
+
+.menu-item img:hover {
+  transform: scale(1.05); 
+}
+
+.menu-item img:active {
+  transform: scale(1.2); 
+}
+
+.menu-item h3 {
+  font-family: fantasy;
+  margin: 10px 0;
+  color: #000000;
+  font-size: 18px;
+}
+
+.menu-item p {
+  color: #000000;
+  font-size: 20px;
+}
+.dark-theme {
+  background-color: #000000;
+}
+
+.reservations {
+  height: 100vh;
+  background-image: url('burning-fire.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.reservation-form {
+  width: 550px;
+  margin: 0 auto;
+  padding: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  background-color: rgba(221, 128, 73, 0.904); 
+  padding: 20px;
+  border-radius: 8px; 
+}
+
+.reservation-form h2 {
+  font-family: fantasy;
+  color: #000000;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.reservation-form form input,
+.reservation-form form textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+.reservation-form form button {
+  display: inline-block;
+  background-color: #000000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.reservation-form form button:hover {
+  background-color: #a3714f;
+}
+
+.footer {
+  background-color: #000000;
+  padding: 40px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.footer-logo img {
+  max-width: 150px;
+}
+.footer-text {
+  font-size: 14px;
+}
+.bottom-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ea7044;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px; 
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  position: fixed; 
+  bottom: 20px;
+  left: 50%;
+}
+.btn-custom {
+background-color: #ff6f61;
+color: white;
+border: none;
+}
+
+.btn-custom:hover {
+background-color: #ff5a4c;
+}
+
+.text-muted {
+font-size: 0.9rem;
+}
+
+.row-equal-height {
+display: flex;
+flex-wrap: nowrap;
+}
+clock.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: black;
+  margin: 0;
+  font-family: 'Digital-7', sans-serif;
+}
+
+.clock-container {
+  background: #111;
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(255, 0, 0, 0.979);
+  border: 2px solid #da550d;
+}
+#clock {
+  font-size: 50px;
+  color: #ff4800;
+  text-shadow: 0 0 10px #ff0000, 0 0 20px #ff5500;
+  letter-spacing: 5px;
+  text-align: center;
+}
