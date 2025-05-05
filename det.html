@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <body>
+    <h2>Krijo Meme F1</h2>
+  
+    <form id="memeForm">
+      <input type="text" id="topText" placeholder="Teksti sipër" value="Ferrari strategjia"><br><br>
+      <input type="text" id="bottomText" placeholder="Teksti poshtë" value="Tifozët e Leclerc"><br><br>
+      <button type="submit">Krijo Memën</button>
+    </form>
+  
+    <div id="result" style="margin-top: 20px;"></div>
+  
+    <!DOCTYPE html>
+<html>
+<head>
+  
+  <h2>Krijo Meme F1</h2>
+  <div id="result" style="margin-top: 20px;"></div>
+
+  <script>
+    document.getElementById("memeForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const formData = new FormData();
+      formData.append("template_id", "112126428"); // Distracted Boyfriend
+
+      formData.append("username", "EmaLico");
+      formData.append("password", "emalico22@$"); // 👈 Vendose këtu
+
+      formData.append("text0", document.getElementById("topText").value);
+      formData.append("text1", document.getElementById("bottomText").value);
+
+      fetch("https://api.imgflip.com/caption_image", {
+        method: "POST",
+        body: formData
+      })
+      .then(res => res.json())
+      .then(data => {
+        if (data.success) {
+          document.getElementById("result").innerHTML = `<img src="${data.data.url}" alt="Meme">`;
+        } else {
+          document.getElementById("result").innerText = "Gabim nga API: " + data.error_message;
+        }
+      })
+      .catch(err => {
+        document.getElementById("result").innerText = "Gabim rrjeti: " + err;
+      });
+    });
+  </script>
+</body>
+</html>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formula 1 - Gara Botërore</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    h1, h2 {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .carousel-item img {
+      height: 300px;
+      object-fit: cover;
+    }
+    body {
+      background-color: #880404;
+      color: white; /* Ngjyra e shkrimit të bëhet e bardhë */
+    }
+    h1, h2 {
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Formula 1</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Races</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">More</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Teams</a></li>
+            <li><a class="dropdown-item" href="#">Drivers</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link disabled">Disabled</a></li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- Përshkrimi -->
+<div class="container mt-4">
+  <div class="p-4 bg-light rounded shadow-sm text-center">
+    <h1>Mirësevini në Botën e Formula 1</h1>
+    <p>Formula 1 është kulmi i garave automobilistike — një përzierje e shpejtësisë, teknologjisë dhe pasionit. Zbuloni më poshtë të gjitha garat që ndodhin në çdo cep të botës!</p>
+  </div>
+</div>
+
+<!-- Carousel -->
+<div id="f1Carousel" class="carousel slide mt-4" data-bs-ride="carousel" data-bs-interval="3000">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://cdn-5.motorsport.com/images/amp/2d1vB5nY/s1000/lewis-hamilton-ferrari.jpg" class="d-block w-100" alt="Formula 1">
+    </div>
+    <div class="carousel-item">
+      <img src="https://source.unsplash.com/1200x400/?f1-car" class="d-block w-100" alt="F1 Car">
+    </div>
+    <div class="carousel-item">
+      <img src="https://source.unsplash.com/1200x400/?race-track" class="d-block w-100" alt="Race Track">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#f1Carousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#f1Carousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<div class="container mt-5">
+  <h2 class="text-white">Garat Botërore 2025</h2>
+  <div class="row mt-4">
+
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 shadow">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHZQGj5CzmWBCLkK_k5iEtrE36l4D0BuQhzQ&s" class="card-img-top" alt="Australia GP">
+        <div class="card-body">
+          <h5 class="card-title">Grand Prix i Australisë</h5>
+          <p class="card-text">Melbourne, 16 Mars</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 shadow">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgoOx2_6DdDlpmO-UayIWcEXnaqrNPc9KhTA&s" class="card-img-top" alt="Monaco GP">
+        <div class="card-body">
+          <h5 class="card-title">Grand Prix i Monakos</h5>
+          <p class="card-text">Monte Carlo, 25 Maj</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 shadow">
+        <img src="https://e2.365dm.com/16/01/768x432/montreal-aerial-formula-1-canada-f1_3399841.jpg?20160114165220" class="card-img-top" alt="Canada GP">
+        <div class="card-body">
+          <h5 class="card-title">Grand Prix i Kanadasë</h5>
+          <p class="card-text">Montreal, 9 Qershor</p>
+        </div>
+      </div>
+    </div>
+ 
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 shadow">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmS3HMsodDjsUWQJcZQBVBYXvOhIr1Kr26yg&s" class="card-img-top" alt="Britain GP">
+        <div class="card-body">
+          <h5 class="card-title">Grand Prix i Britanisë</h5>
+          <p class="card-text">Silverstone, 7 Korrik</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 shadow">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ7fJ4q66itRrZFc3vH78Z3zzH-ONEHVg6tg&s" class="card-img-top" alt="Japan GP">
+        <div class="card-body">
+          <h5 class="card-title">Grand Prix i Japonisë</h5>
+          <p class="card-text">Suzuka, 13 Tetor</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 shadow">
+        <img src="https://www.dubaiyachts.com/wp-content/uploads/2024/07/Abu-Dhabi-Grand-Prix-Formula-1-2024-1-1.jpg" class="card-img-top" alt="Abu Dhabi GP">
+        <div class="card-body">
+          <h5 class="card-title">Grand Prix i Abu Dhabit</h5>
+          <p class="card-text">Yas Marina, 1 Dhjetor</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container mt-5 mb-5">
+  <h2 class="text-white">Na Kontakto</h2>
+  <form>
+    <div class="form-floating mb-3">
+      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <label for="floatingInput">Email address</label>
+    </div>
+    <div class="form-floating">
+      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+      <label for="floatingPassword">Password</label>
+    </div>
+
+
+    <form class="row g-3">
+      <div class="col-md-4">
+        <label for="validationServer01" class="form-label">First name</label>
+        <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-md-4">
+        <label for="validationServer02" class="form-label">Last name</label>
+        <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-md-6">
+        <label for="validationServer03" class="form-label">City</label>
+        <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
+        <div id="validationServer03Feedback" class="invalid-feedback">
+          Please provide a valid city.
+        </div>
+      </div>
+      <div class="col-md-3">
+        <label for="validationServer04" class="form-label">State</label>
+        <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+          <option selected disabled value="">Choose...</option>
+          <option>Afganistan</option>
+<option>Albania</option>
+<option>Algjeria</option>
+<option>Andora</option>
+<option>Angola</option>
+<option>Antigua dhe Barbuda</option>
+<option>Arabia Saudite</option>
+<option>Argentina</option>
+<option>Armeni</option>
+<option>Australi</option>
+<option>Austria</option>
+<option>Azerbajxhan</option>
+<option>Bahamas</option>
+<option>Bahrein</option>
+<option>Bangladeshi</option>
+<option>Barbados</option>
+<option>Belgjika</option>
+<option>Belize</option>
+<option>Benini</option>
+<option>Bhutan</option>
+<option>Bolivia</option>
+<option>Bosnja dhe Hercegovina</option>
+<option>Botswana</option>
+<option>Brazili</option>
+<option>Bruneji</option>
+<option>Bullgari</option>
+<option>Burkina Faso</option>
+<option>Burundi</option>
+<option>Butani</option>
+<option>Cabo Verde</option>
+<option>Kamboxhia</option>
+<option>Kamerun</option>
+<option>Kanada</option>
+<option>Kuvajt</option>
+<option>Kenia</option>
+<option>Kina</option>
+<option>Kiribati</option>
+<option>Koreja e Jugut</option>
+<option>Koreja e Veriut</option>
+<option>Kosta Rika</option>
+<option>Kuba</option>
+<option>Qipro</option>
+<option>Kolumbia</option>
+<option>Komoret</option>
+<option>Kongo (Republika Demokratike)</option>
+<option>Kongo (Republika e)</option>
+<option>Kroacia</option>
+<option>Kuvajt</option>
+<option>Laos</option>
+<option>Letoni</option>
+<option>Lesoto</option>
+<option>Libani</option>
+<option>Liberi</option>
+<option>Libia</option>
+<option>Liechtenstein</option>
+<option>Lituania</option>
+<option>Luksemburgu</option>
+<option>Madagaskar</option>
+<option>Maçedonia e Veriut</option>
+<option>Malavi</option>
+<option>Maldivet</option>
+<option>Mali</option>
+<option>Malta</option>
+<option>Maroku</option>
+<option>Mauretani</option>
+<option>Mauritius</option>
+<option>Mikronezia</option>
+<option>Moldavia</option>
+<option>Monako</option>
+<option>Mozambiku</option>
+<option>Namibia</option>
+<option>Nauru</option>
+<option>Nepal</option>
+<option>Niger</option>
+<option>Nigeria</option>
+<option>Nikaragua</option>
+<option>Norvegjia</option>
+<option>Nju Zelandë</option>
+<option>Omani</option>
+<option>Papua Guineja e Re</option>
+<option>Paragvaj</option>
+<option>Peru</option>
+<option>Polonia</option>
+<option>Portugalia</option>
+<option>Ruanda</option>
+<option>Rumani</option>
+<option>Rusia</option>
+<option>Rwanda</option>
+<option>Saint Kitts dhe Nevis</option>
+<option>Saint Lucia</option>
+<option>Saint Vincent dhe Grenadinat</option>
+<option>Samoa</option>
+<option>San Marino</option>
+<option>Sao Tome dhe Principe</option>
+<option>Senegali</option>
+<option>Seychelles</option>
+<option>Sierra Leone</option>
+<option>Singapori</option>
+<option>Sllovakia</option>
+<option>Sllovenia</option>
+<option>Solomon</option>
+<option>Somalia</option>
+<option>Sri Lanka</option>
+<option>Sudan</option>
+<option>Surinami</option>
+<option>Sveta Helena</option>
+<option>Suedi</option>
+<option>Svicër</option>
+<option>Sierra Leone</option>
+<option>Siria</option>
+<option>Singapore</option>
+<option>Sllovakia</option>
+<option>Slloveni</option>
+<option>Shën Tome dhe Principe</option>
+<option>Tonga</option>
+<option>Tunizi</option>
+<option>Turqi</option>
+<option>Turkmenistan</option>
+<option>Tuvalu</option>
+<option>Uganda</option>
+<option>Ukraina</option>
+<option>Uruguai</option>
+<option>Vanuatu</option>
+<option>Vatikani</option>
+<option>Venecuela</option>
+<option>Vietnami</option>
+<option>Zelandia e Re</option>
+<option>Zambja</option>
+<option>Zvicra</option>
+        </select>
+        <div id="validationServer04Feedback" class="invalid-feedback">
+          Please select a valid state.
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
+          <label class="form-check-label" for="invalidCheck3">
+            Agree to terms and conditions
+          </label>
+          <div id="invalidCheck3Feedback" class="invalid-feedback">
+            You must agree before submitting.
+          </div>
+        </div>
+      </div>
+    <div class="form-floating">
+      <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+        <option selected>Gender</option>
+        <option value="female">Female</option>
+        <option value="male">Male</option>
+        <option value="trans-female">Trans Female</option>
+        <option value="trans-male">Trans Male</option>
+        <option value="trans-man">Trans Man</option>
+        <option value="trans-woman">Trans Woman</option>
+        <option value="transmasculine">Transmasculine</option>
+        <option value="transfeminine">Transfeminine</option>
+        <option value="non-binary">Non-binary</option>
+        <option value="genderqueer">Genderqueer</option>
+        <option value="genderfluid">Genderfluid</option>
+        <option value="agender">Agender</option>
+        <option value="bigender">Bigender</option>
+        <option value="pangender">Pangender</option>
+        <option value="demiboy">Demiboy</option>
+        <option value="demigirl">Demigirl</option>
+        <option value="neutrois">Neutrois</option>
+        <option value="androgyne">Androgyne</option>
+        <option value="maverique">Maverique</option>
+        <option value="graygender">Graygender</option>
+        <option value="intergender">Intergender</option>
+        <option value="polygender">Polygender</option>
+        <option value="autigender">Autigender</option>
+        <option value="novigender">Novigender</option>
+        <option value="cassgender">Cassgender</option>
+        <option value="aporagender">Aporagender</option>
+        <option value="aliagender">Aliagender</option>
+        <option value="blurgender">Blurgender</option>
+        <option value="ceterogender">Ceterogender</option>
+        <option value="colorgender">Colorgender</option>
+        <option value="demiflux">Demiflux</option>
+        <option value="gyragender">Gyragender</option>
+        <option value="quoisgender">Quoisgender</option>
+        <option value="two-spirit">Two-Spirit</option>
+        <option value="intersex">Intersex</option>
+        <option value="questioning">Questioning</option>
+        <option value="abimegender">Abimegender</option>
+<option value="aesthetigender">Aesthetigender</option>
+<option value="aerogender">Aerogender</option>
+<option value="aethergender">Aethergender</option>
+<option value="agenderflux">Agenderflux</option>
+<option value="alexigender">Alexigender</option>
+<option value="aliusgender">Aliusgender</option>
+<option value="amaregender">Amaregender</option>
+<option value="ambigender">Ambigender</option>
+<option value="ambonec">Ambonec</option>
+<option value="anogender">Anogender</option>
+<option value="antigender">Antigender</option>
+<option value="astralgender">Astralgender</option>
+<option value="atmosgender">Atmosgender</option>
+<option value="autonogender">Autonogender</option>
+<option value="bengender">Bengender</option>
+<option value="bimogender">Bimogender</option>
+<option value="cadensgender">Cadensgender</option>
+<option value="caligender">Caligender</option>
+<option value="celestigender">Celestigender</option>
+<option value="chaosgender">Chaosgender</option>
+<option value="chorogender">Chorogender</option>
+<option value="clowngender">Clowngender</option>
+<option value="cogitogender">Cogitogender</option>
+<option value="commogender">Commogender</option>
+<option value="corugender">Corugender</option>
+<option value="cosmogender">Cosmogender</option>
+<option value="cryptogender">Cryptogender</option>
+<option value="cutegender">Cutegender</option>
+<option value="cyclogender">Cyclogender</option>
+<option value="daemongender">Daemongender</option>
+<option value="deliciagender">Deliciagender</option>
+<option value="demonogender">Demonogender</option>
+<option value="desigender">Desigender</option>
+<option value="digitgender">Digitgender</option>
+<option value="divergender">Divergender</option>
+<option value="doegender">Doegender</option>
+<option value="dolcegender">Dolcegender</option>
+<option value="dollgender">Dollgender</option>
+<option value="dragongender">Dragongender</option>
+<option value="duragender">Duragender</option>
+<option value="egogender">Egogender</option>
+<option value="eidgender">Eidgender</option>
+<option value="elagender">Elagender</option>
+<option value="electrogender">Electrogender</option>
+<option value="emotugender">Emotugender</option>
+<option value="enigmagender">Enigmagender</option>
+<option value="ethergender">Ethergender</option>
+<option value="eventogender">Eventogender</option>
+<option value="exgender">Exgender</option>
+<option value="faegender">Faegender</option>
+<option value="faygender">Faygender</option>
+<option value="felisgender">Felisgender</option>
+<option value="fictigender">Fictigender</option>
+<option value="floragender">Floragender</option>
+<option value="foggender">Foggender</option>
+<option value="frictigender">Frictigender</option>
+<option value="frostgender">Frostgender</option>
+<option value="fuzzgender">Fuzzgender</option>
+<option value="gaea-gender">Gaea-gender</option>
+<option value="galaxiegender">Galaxiegender</option>
+<option value="gastrogender">Gastrogender</option>
+<option value="genderblank">Genderblank</option>
+<option value="gendercosm">Gendercosm</option>
+<option value="genderdoe">Genderdoe</option>
+<option value="genderfae">Genderfae</option>
+<option value="genderfaun">Genderfaun</option>
+<option value="genderfluxflux">Genderfluxflux</option>
+<option value="genderfractal">Genderfractal</option>
+<option value="genderghost">Genderghost</option>
+<option value="genderlight">Genderlight</option>
+<option value="gendernebula">Gendernebula</option>
+<option value="genderpunk">Genderpunk</option>
+<option value="genderrose">Genderrose</option>
+<option value="gendersylph">Gendersylph</option>
+<option value="glamgender">Glamgender</option>
+<option value="glitchgender">Glitchgender</option>
+<option value="gothgender">Gothgender</option>
+<option value="grimgender">Grimgender</option>
+<option value="gustogender">Gustogender</option>
+<option value="halogender">Halogender</option>
+<option value="hologender">Hologender</option>
+<option value="hydrogender">Hydrogender</option>
+<option value="icthygender">Icthygender</option>
+<option value="imagigender">Imagigender</option>
+<option value="inexgender">Inexgender</option>
+<option value="introgender">Introgender</option>
+<option value="jesterfluid">Jesterfluid</option>
+<option value="juxera">Juxera</option>
+<option value="kitgender">Kitgender</option>
+<option value="librafeminine">Librafeminine</option>
+<option value="libramasculine">Libramasculine</option>
+<option value="lunagender">Lunagender</option>
+<option value="luxgender">Luxgender</option>
+<option value="magigender">Magigender</option>
+<option value="melogender">Melogender</option>
+<option value="mirrorgender">Mirrorgender</option>
+<option value="mistgender">Mistgender</option>
+<option value="multigender">Multigender</option>
+<option value="mythgender">Mythgender</option>
+<option value="nanogender">Nanogender</option>
+<option value="neogender">Neogender</option>
+<option value="neogender">RACCON</option>
+        <option value="other">Other</option>
+        <option value="prefer-not-to-say">Prefer not to say</option>
+      </select>
+      <label for="floatingSelect">Works with selects</label>
+    </div>
+  
+    <button type="submit" class="btn btn-primary">Dërgo</button>
+  </form>
+</div>
+
+<button type="button" class="btn btn-primary" id="liveToastBtn">Show informations</button>
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <img src="https://brandlogos.net/wp-content/uploads/2022/04/formula_1-logo-brandlogos.net_.png" class="rounded me-2" alt="Formula 1 logo">
+      <strong class="me-auto">F1</strong>
+      <small>11 mins ago</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Send, thank you for your information!!
+    </div>
+  </div>
+</div>
+
+
+
