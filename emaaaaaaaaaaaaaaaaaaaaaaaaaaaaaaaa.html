@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Futbolli Sot - Blog</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: #0b3d91;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    nav {
+      background-color: #002f6c;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 10px 20px;
+    }
+
+    nav h1 {
+      color: white;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    nav ul li a:hover {
+      background: #004aad;
+    }
+
+    .hero {
+      background: url('https://assets.architecturaldigest.in/photos/6744bfcae69ca54084a71383/16:9/w_1616,h_909,c_limit/Untitled%20design%20(59).png') center/cover no-repeat;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 5px #000;
+      text-align: center;
+      animation: slideDown 1.5s ease;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    .section {
+      margin-bottom: 40px;
+      animation: fadeInUp 1s ease;
+    }
+
+    .section h2 {
+      color: #0b3d91;
+      margin-bottom: 10px;
+    }
+
+    .post {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      padding: 15px;
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      animation: fadeIn 1.2s ease;
+    }
+
+    .post img {
+      width: 100%;
+      border-radius: 8px;
+      max-height: 250px;
+      object-fit: cover;
+    }
+
+    button {
+      background: #0b3d91;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #5e90e7;
+    }
+
+    footer {
+      background: hwb(214 25% 15%);
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      .hero {
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Futbolli Sot</h1>
+    <p>Lajmet më të fundit nga bota e futbollit</p>
+  </header>
+
+  <nav>
+    <h1>News Flash</h1>
+    <ul>
+      <li><a href="#lajme"> 📑 Lajmet</a></li>
+      <li><a href="#ekipet">🥇Ekipet</a></li>
+      <li><a href="#kontakti">📞Kontakti</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero">
+    <h2>Mundësia për të jetuar emocionin e futbollit çdo ditë!</h2>
+  </div>
+
+  <div class="container">
+
+    <section id="lajme" class="section">
+      <h2>Lajmet e fundit</h2>
+      <div class="post">
+        <img src="https://assets-us-01.kc-usercontent.com/31dbcbc6-da4c-0033-328a-d7621d0fa726/f1c1646c-88e4-4828-a604-8cea4016c75c/Real%20Madrid%20Barcelona%202.JPG?ver=12-01-2025?w=3840&q=75" alt="Lajm Futbolli">
+        <p>Derbi i madh mes Real Madrid dhe Barcelona përfundon me një barazim dramatik 2-2. Tifozët mbushën stadiumin dhe emocionet ishin të mëdha!</p>
+        <button onclick="alert('Lajmi i plotë do të shtohet së shpejti!')">Lexo më shumë</button>
+      </div>
+    </section>
+
+    <section id="ekipet" class="section">
+      <h2>Ekipet e preferuara</h2>
+      <div class="post">
+        <img src="https://static.independent.co.uk/2022/03/16/18/newFile-5.jpg" alt="Ekip Futbolli">
+        <p>Manchester City dominon Premier League këtë sezon me lojë të organizuar dhe lojtarë të nivelit botëror. Ja disa fakte rreth strategjisë së tyre!</p>
+        <button onclick="alert('Së shpejti profile për çdo ekip!')">Lexo më shumë</button>
+      </div>
+    </section>
+
+    <section id="kontakti" class="section">
+      <h2>Na Kontaktoni</h2>
+      <div class="post">
+        <p>📧 Email: kontakt@futbollisot.al <br>
+           📱 Tel: +355 68 000 0000 <br>
+           📍 Adresa: Tirana, Shqipëri</p>
+        <button onclick="alert('Na dërgo një mesazh!')">Dërgo Mesazh</button>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    &copy; 2025 Futbolli Sot - Të gjitha të drejtat e rezervuara.
+  </footer>
+
+</body>
+</html>
